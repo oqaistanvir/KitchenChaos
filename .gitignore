@@ -7,3 +7,5 @@ Packages
 UserSettings
 *.sln
 *.csproj
+_Assets
+_Assets.meta
