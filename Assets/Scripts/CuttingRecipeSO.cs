@@ -7,6 +7,7 @@ public class CuttingRecipeSO : ScriptableObject
 {
     [SerializeField] private KitchenObjectSO input;
     [SerializeField] private KitchenObjectSO output;
+    [SerializeField] private int cuttingProgressMax;
 
     public KitchenObjectSO GetCuttingRecipeSOInput()
     {
@@ -16,5 +17,10 @@ public class CuttingRecipeSO : ScriptableObject
     public KitchenObjectSO GetCuttingRecipeSoOutput()
     {
         return output;
+    }
+
+    public int GetCuttingProgressMax()
+    {
+        return cuttingProgressMax;
     }
 }
