@@ -886,6 +886,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 949199654}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &646226350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 646226351}
+  - component: {fileID: 646226352}
+  m_Layer: 0
+  m_Name: DeliveryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &646226351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646226350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &646226352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646226350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959b8ae33f75ea84aaa8ad19eed1fbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recipeListSO: {fileID: 11400000, guid: e673095c38d04f848bf0d9bc12a2ca3f, type: 2}
 --- !u!1001 &718522720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2490,7 +2535,7 @@ PrefabInstance:
     - target: {fileID: 6437687524049777626, guid: 9e9a6d40aa419974e8912ef03618c8ef,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6437687524049777626, guid: 9e9a6d40aa419974e8912ef03618c8ef,
         type: 3}
@@ -2827,7 +2872,7 @@ PrefabInstance:
     - target: {fileID: 8643880629869393393, guid: bc0fe89eae69756419f296ee5ade7ab6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 8643880629869393393, guid: bc0fe89eae69756419f296ee5ade7ab6,
         type: 3}
@@ -3289,3 +3334,4 @@ SceneRoots:
   - {fileID: 1296334054}
   - {fileID: 761762537}
   - {fileID: 96714211}
+  - {fileID: 646226351}
