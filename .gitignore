@@ -3,9 +3,7 @@ Library
 ProjectSettings
 Temp
 Logs
-Packages
 UserSettings
 *.sln
 *.csproj
-_Assets
 *.meta
