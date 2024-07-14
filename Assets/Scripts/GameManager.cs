@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     public event EventHandler OnStateChanged;
     public event EventHandler OnGamePaused;
     public event EventHandler OnGameUnpaused;
-    [SerializeField] private float countdownToStartTimer = 3f;
-    [SerializeField] private float gamePlayingTimerMax = 60f;
+    [SerializeField] private float countdownToStartTimer = 1f;
+    [SerializeField] private float gamePlayingTimerMax = 300f;
     private float gamePlayingTimer;
     private bool isGamePaused = false;
     private enum State
@@ -32,6 +32,10 @@ public class GameManager : MonoBehaviour
     {
         GameInput.Instance.OnPauseAction += GameInput_OnPauseAction;
         GameInput.Instance.OnInteractAction += GameInput_OnInteractAction;
+
+        //DEBUG TRIGGER GAME TI START AUTOMATICALLY
+        state = State.CountdownToStart;
+        OnStateChanged?.Invoke(this, EventArgs.Empty);
     }
 
     private void GameInput_OnInteractAction(object sender, EventArgs e)
