@@ -79,7 +79,7 @@ public class Player : NetworkBehaviour, IKitchenObjectParent
     {
         Vector2 inputVector = GameInput.Instance.GetMovementVectorNormalized();
 
-        Vector3 moveDir = new Vector3(inputVector.x, 0f, inputVector.y);
+        Vector3 moveDir = new(inputVector.x, 0f, inputVector.y);
 
         if (moveDir != Vector3.zero)
         {
