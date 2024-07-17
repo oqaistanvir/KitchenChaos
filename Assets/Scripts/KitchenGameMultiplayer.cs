@@ -55,7 +55,7 @@ public class KitchenGameMultiplayer : NetworkBehaviour
             connectionApprovalResponse.Reason = "Game is full";
             return;
         }
-        connectionApprovalResponse.Approved = false;
+        connectionApprovalResponse.Approved = true;
     }
 
     public void SpawnKitchenObject(KitchenObjectSO kitchenObjectSO, IKitchenObjectParent kitchenObjectParent)
